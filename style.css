@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+}
+.container{
+ width: 50%;
+ margin: auto;
+}
+
+.showcase ul {
+     margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+/* .content{
+    width: 50%;
+   
+} */
+
+.showcase li {
+    display: flex;
+    list-style: none;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.seat {
+    background-color: gray;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+select {
+    appearance: none;
+    font-size: 12px;
+    margin: 15px ;
+    padding: 8px;
+
+    border-radius: 10px;
+}
+
+.seat.selected {
+    background-color: aqua;
+}
+
+.seat.occupied {
+    background-color: white;
+}
+
+.seat:nth-of-type(2) {
+    margin-right: 20px;
+}
+
+.seat:nth-last-of-type(2) {
+    margin-left: 20px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.showcase.seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+.screen {
+    width: 50%;
+    height: 60px;
+    margin: 30px auto;
+    padding: 35px;
+    box-shadow: 0 5px 10px 10px rgba(255, 255, 255, 0.25);
+    background-color: white;
+    transform: rotateX(-45deg);
+   
+}
+
+.content {
+perspective: 1000px;
+margin-bottom: 30px;
+}
+p.text span{
+    color: aqua;
+}
+button{
+    width: 30%;
+    /* margin:  20px 50px; */
+    padding: 10px;
+    border-radius: 10px;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    background-color: brown;
+}
+.btn:disabled{
+    color: #fff;
+    background-color: gray;
+
+}
+a {  
+    text-decoration: none;
+}
+
+
+#bton:hover{
+ background-color: red;
+ color: white;
+}
+#popup:enabled{
+    background-color: white;
+    color: black;
+}
+.popup{
+    background-color: white;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+
+}
